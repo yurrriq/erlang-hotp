@@ -1,3 +1,4 @@
 ebin/
 logs/
-test/*.beam
+*.beam
+_build

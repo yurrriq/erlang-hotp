@@ -1,12 +1,7 @@
 {application, hotp,
- [
-  {description, "Erlang adaptation of HMAC-Based One-Time Password Algorithm"},
-  {vsn, "0.0.0"},
+ [{description, "Erlang adaptation of HMAC-Based One-Time Password Algorithm."},
+  {vsn, "0.0.1"},
   {registered, []},
-  {applications, [
-                  kernel,
-                  stdlib,
-                  crypto
-                 ]},
+  {applications, [kernel, stdlib, crypto]},
   {env, []}
  ]}.

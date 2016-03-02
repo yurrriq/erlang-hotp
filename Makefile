@@ -1,22 +1,13 @@
-.PHONY: \
-	all \
-	compile \
-	clean \
-	dialyze \
-	test
+.PHONY: all, compile, clean, dialyze, test
 
 all: travis_ci dialyze
 
-travis_ci: clean compile test
+travis_ci: clean test
 
-compile:
-	@rebar compile
+compile: ; @rebar3 compile
 
-clean:
-	@rebar clean
+clean: ; @rebar3 clean
 
-dialyze:
-	@dialyzer ebin/*.beam test/*.beam
+dialyze: ; @reabr3 dialyzer
 
-test:
-	@rebar ct
+test: ;	@rebar3 ct
